@@ -13,11 +13,13 @@ in both joints. Now the camera can clearly see the dice infront of the robot.
 
 <h2> Installation Instructions </h2>
 
-```catkin_make   
+```
+//Move to catkin_ws directory
+catkin_make   
 source devel/setup.bash
 roslaunch simple_arm robot_spawn.launch
 
-\\Now open another terminal and move to save path
+\\Now open another terminal and move to same path
 source devel/setup.bash
 rosservice call /arm_mover/safe_move "joint_1: 0
 joint_2: 0"
