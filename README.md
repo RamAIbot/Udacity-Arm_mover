@@ -2,17 +2,18 @@
 Simple Arm_Mover in gazebo
 <p>
   Uses the simple arm ROS package to make a robot model with 2 joints. The catkin package structure is used here along with gazebo engine.
- </p>
+</p>
 
 <h2> Working </h2>
+<p>
 Initially when the robot's joints (2 joints) is in 0,0 radians angle, the camera points to the sky og the environment.
 Whenever the camera points to sky (Uniform pixels (gray) in image) and arm is not moving the GoToPosition service is called and the Arm is moved 90 degress or 1.57 radians
 in both joints. Now the camera can clearly see the dice infront of the robot.
+</p>
 
 <h2> Installation Instructions </h2>
-```
-\\Move to catkin_ws inside the package
-catkin_make
+
+```catkin_make   
 source devel/setup.bash
 roslaunch simple_arm robot_spawn.launch
 
@@ -25,11 +26,13 @@ joint_2: 0"
 ```
 
 
-<p align="center">
+
+
+<h2> Output Screens </h2>
 <h3> The arm is moved to 90 degress in both the joints.</h3>
-  <img src="CaptureRos1.JPG" width="350" title="hover text">
+  <img src="CaptureRos1.JPG" width="350" title="hover text"/>
   
   
   <h3> Initial position of arm 0 degress in both the joints.</h3>
-  <img src="CaptureRos2.JPG" width="350" alt="accessibility text">
-</p>
+  <img src="CaptureRos2.JPG" width="350" alt="accessibility text"/>
+
